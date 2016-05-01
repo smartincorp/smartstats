@@ -1,0 +1,2 @@
+<li class="active"><a href="#"><i class="fa fa-key"></i> <span>Smart Stats</span></a></li>
+<li><a href="https://patchy.smartclashcoc.com/" target="_blank"><i class="fa fa-link"></i>Smart Patch</a></li>
