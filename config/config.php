@@ -30,3 +30,6 @@ $conf = (object) array(
 	    
 	}
 ?>
+<?php
+        $Update =  file_get_contents('https://static.smartclashcoc.com/smartstats/update.txt'); //Don't change this. It checks for update.
+?>
