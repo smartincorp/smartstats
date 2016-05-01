@@ -4,8 +4,11 @@
 	    <p align="center"><?php echo $conf->meta->discription; ?></p>
 	</section>
 	<div class="content"><br><br>
-	
-			<?php echo $serverStatus; ?><br><br> <!-- Displays whether the server offline or online.-->
+	<?php  if($Update > 5) {
+                echo '<div class="callout callout-warning"><h4>Update Available!</h4><p>Smart Stats has an update. Download it from <a href="https://github.com/smartclash/statuspage/releases" target="_blank">Here</a></div>';
+        }
+        ?>
+	<?php echo $serverStatus; ?><br><br> <!-- Displays whether the server offline or online.-->
 			
 	    <div class="row">
 		<div class="col-md-3 col-sm-6 col-xs-12">
