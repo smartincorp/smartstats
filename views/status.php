@@ -4,7 +4,7 @@
 	    <p align="center"><?php echo $conf->meta->discription; ?></p>
 	</section>
 	<div class="content"><br><br>
-	<?php  if($Update > 1.1) {
+	<?php  if($Update > 1.2) {
                 echo '<div class="callout callout-warning"><h4>Update Available!</h4><p>Smart Stats has an update. Download it from <a href="https://github.com/smartclash/statuspage/releases" target="_blank">Here</a></div>';
         }
         ?>
