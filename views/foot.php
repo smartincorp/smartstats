@@ -26,7 +26,7 @@
               <div class="menu-info">
                 <h4 class="control-sidebar-subheading">Smart Stats</h4>
 
-                <p>Is now v1.0</p>
+                <p>Is now v<?php echo $Version; ?></p>
               </div>
             </a>
           </li>
@@ -38,7 +38,7 @@
           <li>
             <a href="javascript::;">
               <h4 class="control-sidebar-subheading">
-                Custom Template Design
+                Better script and features
                 <span class="label label-danger pull-right">70%</span>
               </h4>
 
@@ -47,6 +47,7 @@
               </div>
             </a>
           </li>
+          <li><script src="dist/js/demo.js"></script></li>
         </ul>
         <!-- /.control-sidebar-menu -->
 
