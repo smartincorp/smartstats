@@ -1,14 +1,12 @@
 <div class="content-wrapper">
 	<section class="content-header">
-	    <h1 align="center"><?php echo $conf->meta->server_name; ?></h1></h1><br>
-	    <p align="center"><?php echo $conf->meta->discription; ?></p>
+	    <h1 align="center"><?php echo $server_Name; ?></h1></h1><br>
+	    <p align="center"><?php echo $server_Disc; ?></p>
 	</section>
 	<div class="content"><br><br>
-	<?php  if($Update > 1.2) {
-                echo '<div class="callout callout-warning"><h4>Update Available!</h4><p>Smart Stats has an update. Download it from <a href="https://github.com/smartclash/statuspage/releases" target="_blank">Here</a></div>';
-        }
-        ?>
-	<?php echo $serverStatus; ?><br><br> <!-- Displays whether the server offline or online.-->
+      <?php echo $update_Avail; ?>
+	
+			<?php echo $serverStatus; ?><br><br> <!-- Displays whether the server offline or online.-->
 			
 	    <div class="row">
 		<div class="col-md-3 col-sm-6 col-xs-12">
