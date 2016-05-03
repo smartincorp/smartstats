@@ -12,14 +12,7 @@
 	$server_Debug = "9332";
 	$server_Port = "9339";
 	$server_key = "ucs";
-	
-	/* Script information (Don't change)
-	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-	
-	$Version = "2.0"
-	
+
 	/* DOCUMENT END!!
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-	
-
 ?>
