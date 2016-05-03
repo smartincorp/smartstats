@@ -12,7 +12,7 @@ After a long plan, we've decided to release the script with
 
 I you are willing to make any changes please make a pull request or
 
-Code with me in CLOUD at [cloud9]{https://ide.c9.io/karansanjeev/smartstats)
+Code with me in CLOUD at [cloud9](https://ide.c9.io/karansanjeev/smartstats)
 
 If you have any other problem, suggestion, please make a issue for that and be as discriptive as possible but be narrow also!
 
