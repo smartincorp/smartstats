@@ -27,7 +27,7 @@
 	
         /* Version Checker
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-	 $Version = "2.0"; //Prestent script version
+	 $Version = "2.1"; //Prestent script version
 	 $update = file_get_contents('https://static.smartclashcoc.com/smartstats/update.txt'); //Url for global version
 	 $update_Url = file_get_contents('https://static.smartclashcoc.com/smartstats/updateurl.txt'); //Url for update
 	 
