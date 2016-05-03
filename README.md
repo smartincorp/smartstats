@@ -10,12 +10,12 @@ A cute little status page for UCS server owners to make their community to know 
 
 ##Ideas for v4.0
 
-After a long plan, we've decided to release the script with 
+After a long plan, we've decided to release version 4.0 with 
 
 * Full automated UCS restater/Stoper/Starter in web interface (admin process)
 * Online, live DATABASE editing tools (Admin process)
 * Account specailly for ADMIN (only person to use admin process)
-* Automatic UCS and Script updated
+* Automatic UCS and Script updater
 * CSV files editing and updating in web interface (might be introduced in 5.0)
 * Automatic patcher and uploader to our global secure server
 * And more....
