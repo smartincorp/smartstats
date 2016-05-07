@@ -31,7 +31,7 @@
 }
   </style>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition <?php echo $skin; ?> sidebar-mini">
   <div class="pace-hide-contents">
 
 <?php include('views/head.php'); ?>
