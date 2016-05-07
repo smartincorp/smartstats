@@ -11,11 +11,11 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
     
     $server_Ip = file_get_contents('http://bot.whatismyipaddress.com/');
-    
+    echo "$server_ip";
     /* API installation
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 	
-	 if ($isOnline = @fsockopen($server_Ip,$server_Port,$errno,$errstr)) {
+	 if ($isOnline = @fsockopen($server_Ip,$server_Port,$errno,$errstr,1)) {
 	  fclose($isOnline);  //Establish connection to api if server online
 				
 		$serverStatus = '<div class="callout callout-success"><h4>Server Online!</h4><p>Server is online, you can start playing with us!</div>';
@@ -24,6 +24,7 @@
         $players = file_get_contents("http://$server_Ip:$server_Debug/$server_key/totalclients");
         $usedram = file_get_contents("http://$server_Ip:$server_Debug/$server_key/ram");
         $info = '<i class="fa fa-circle text-success"></i> Online';
+        $skin = 'skin-green';
         
         
     } else {  //Else display N/A instead if throwing 404 and reuining the page!
@@ -34,6 +35,7 @@
 	    $players = "N/A";
 	    $usedram = "N/A";
 	    $info = '<i class="fa fa-circle text-danger"></i> Offline';
+	    $skin = 'skin-red';
 	    
 	}
 	
