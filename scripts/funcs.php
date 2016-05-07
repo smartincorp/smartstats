@@ -11,7 +11,7 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
     
     $server_Ip = file_get_contents('http://bot.whatismyipaddress.com/');
-    echo "$server_ip";
+    
     /* API installation
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 	
