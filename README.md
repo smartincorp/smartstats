@@ -4,6 +4,10 @@
 
 A cute little status page for UCS server owners to make their community to know what is happening with the server
 
+##NOT TESTED!!!
+
+As a result of development problem with UCS after the latest commit created by @aidid, Netowking code has not been working. ***We have provided a custom UCS and it will work only with that!****
+
 ##Installation
 
 * Open config.php from scripts folder
