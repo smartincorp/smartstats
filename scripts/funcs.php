@@ -33,14 +33,8 @@
 
 	/* Update notification
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-	/*
-	This is pointless and can be done with a simple if isset ($update_avail){ echo 'Update Available' }; rather than placing a random space on the page.
-	*/
 	if($update > $Version) {
 		$update_Avail = "<div class=\"callout callout-warning\"><h4>Update Available!</h4><p>Smart Stats has an update. Download it from <a href=\"$update_Url\" target=\"_blank\">Here</a></div>";
-	}
-	else {
-		$update_Avail = "&nbsp"; //Prevent error
 	}
     
 ?>
