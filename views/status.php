@@ -4,7 +4,7 @@
 	    <p align="center"><?php echo $server_Disc; ?></p>
 	</section>
 	<div class="content"><br><br>
-      <?php echo $update_Avail; ?>
+      <?php echo (isset($update_Avail) ? $update_Avail : ""); ?>
 	
 			<?php echo $serverStatus; ?><br><br> <!-- Displays whether the server offline or online.-->
 			
