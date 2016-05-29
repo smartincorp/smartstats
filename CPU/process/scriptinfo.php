@@ -1,6 +1,6 @@
 <?php
 
-    $info_url = file_get_contents("https://smartclashcoc.com/api.php?action=CheckUpdateSmartStats");
+    $info_url = file_get_contents("https://static.smartclashcoc.com/smartstats/api.php?action=CheckUpdateSmartStats");
     $info = json_decode($info_url);
     
     /* Getting information for api
