@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Smart Stats, A Status Page
+      <?php echo $server_Name; ?>, Status Page
     </div>
     <!-- Default to the left -->
     <strong>Copyright &copy; 2016-17 <a href="https://smartclashcoc.com/" target="_blank">Smart Stats</a>.</strong> All rights reserved.
@@ -47,7 +47,6 @@
               </div>
             </a>
           </li>
-          <li><script src="dist/js/demo.js"></script></li>
         </ul>
         <!-- /.control-sidebar-menu -->
 

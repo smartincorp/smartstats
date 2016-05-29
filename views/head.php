@@ -8,7 +8,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>S</b> S</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Smart</b> Stats</span>
+      <span class="logo-lg"><?php echo $server_Name; ?></span>
     </a>
 
     <!-- Header Navbar -->
@@ -40,25 +40,12 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Smart Stats</p>
+          <p><?php echo $server_Name ; ?></p>
           <!-- Status -->
           <a href="#"><?php echo $info; ?></a>
         </div>
       </div>
 
-      <!-- search form (Optional) -->
-      <!--<form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>-->
-      <!-- /.search form -->
-
-      <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->

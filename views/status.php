@@ -4,11 +4,11 @@
 	    <p align="center"><?php echo $server_Disc; ?></p>
 	</section>
 	<div class="content"><br><br>
-      <?php echo (isset($update_Avail) ? $update_Avail : ""); ?>
+      <?php echo CheckSmartStatsVersion(); ?>
+      <?php echo $update_Avail; ?>
 	
 			<?php echo $serverStatus; ?><br><br> <!-- Displays whether the server offline or online.-->
-			
-	    <div class="row">
+			<div class="row">
 		<div class="col-md-3 col-sm-6 col-xs-12">
 			<div class="info-box">
 				<span class="info-box-icon bg-aqua"><i class=
@@ -118,6 +118,43 @@
             </div>
             <!-- /.box-body -->
           </div>
-	</div>
+          	<div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Server Managment</h3>
+						</div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table">
+                <tbody><tr>
+                  <th style="width: 10px">#</th>
+                  <th>Task</th>
+                  <th>Links</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Start Server</td>
+                  <td>
+                    <a href="ucs/start.php" target="_blank">Click Here</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Server Stop</td>
+                  <td>
+                    <a href="ucs/stop.php" target="_blank">Click Here</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Re-start server</td>
+                  <td>
+                  <a href="ucs/restart.php" target="_blank">Click Here</a>
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+    </div>
 	</section>
 	</div>
