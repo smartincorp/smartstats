@@ -2,10 +2,10 @@
 
 class databaseConnection { // Define Hostname, Username, Password and database
 	
-	private $hn = "31.220.17.165";
-	private $un = "smartcla_karan";
-	private $ps = "AmarAran$@1";
-	private $db = "smartcla_ucsdblt";
+	private $hn = "localhost";
+	private $un = "root";
+	private $ps = "";
+	private $db = "ucsdb";
 	
 	public function connect() { // Connect to database
 		$conn = @mysqli_connect($this->hn,$this->un,$this->ps,$this->db);
