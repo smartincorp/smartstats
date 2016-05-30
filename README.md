@@ -1,5 +1,3 @@
-![Build Failing](https://img.shields.io/badge/build-failing-red.svg)
-
 # Smart Stats
 
 A cute little status page for UCS server owners to make their community to know what is happening with the server
