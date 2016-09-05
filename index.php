@@ -1,4 +1,4 @@
-<?php require('CPU/init.php'); ?>
+<?php require 'CPU/init.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,9 +35,9 @@
   <div class="pace-hide-contents">
 
 <?php 
-include('views/head.php'); 
-include('views/status.php');
-include('views/foot.php'); 
+include 'views/head.php';
+include 'views/status.php';
+include 'views/foot.php';
 ?>
 
 </div>

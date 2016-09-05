@@ -1,5 +1,5 @@
 <?php 
-require("../CPU/init.php"); 
+require '../CPU/init.php';
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -104,51 +104,51 @@ require("../CPU/init.php");
 $dbc = new databaseConnection();
 $dbc->connect();
 
-if (empty($_GET["page"])) {
-	$currentPage = 0;
-	$currentPageLimit = 0;
+if (empty($_GET['page'])) {
+    $currentPage = 0;
+    $currentPageLimit = 0;
 } else {
-	if (!is_numeric($_GET["page"])) {
-		$currentPage = 0;
-		$currentPageLimit = 0;
-	} else {
-		$currentPage = strip_tags($_GET["page"]);
-		$currentPageLimit = $content_limit*$currentPage;
-	}
+    if (!is_numeric($_GET['page'])) {
+        $currentPage = 0;
+        $currentPageLimit = 0;
+    } else {
+        $currentPage = strip_tags($_GET['page']);
+        $currentPageLimit = $content_limit * $currentPage;
+    }
 }
-if (empty($_GET["sortBy"])) {
-	$sql = "SELECT * FROM player LIMIT $currentPageLimit,".$content_limit;
+if (empty($_GET['sortBy'])) {
+    $sql = "SELECT * FROM player LIMIT $currentPageLimit,".$content_limit;
 } else {
-	$sortBy = htmlentities($_GET["sortBy"]);
-	switch ($sortBy) {
-		case "id_asc":
-			$sql = "SELECT * FROM player ORDER BY `PlayerId` ASC LIMIT $currentPageLimit,".$content_limit;
-			break;
-		case "id_desc":
-			$sql = "SELECT * FROM player ORDER BY `PlayerId` DESC LIMIT $currentPageLimit,".$content_limit;
-			break;
-		case "pl_asc":
-			$sql = "SELECT * FROM player ORDER BY `AccountPrivileges` ASC LIMIT $currentPageLimit,".$content_limit;
-			break;
-		case "pl_desc":
-			$sql = "SELECT * FROM player ORDER BY `AccountPrivileges` DESC LIMIT $currentPageLimit,".$content_limit;
-			break;
-		case "ut_asc":
-			$sql = "SELECT * FROM player ORDER BY `LastUpdateTime` ASC LIMIT $currentPageLimit,".$content_limit;
-			break;
-		case "ut_desc":
-			$sql = "SELECT * FROM player ORDER BY `LastUpdateTime` DESC LIMIT $currentPageLimit,".$content_limit;
-			break;
-		case "ip_asc";
-		    $sql = "SELECT * FROM player ORDER BY 'IPAddress' ASC LIMIT $currentPageLimit,".$content_limit;
-		    break;
-		case "ip_desc";
-		    $sql = "SELECT * FROM player ORDER BY 'IPAddress' DESC LIMIT $currentPageLimit,".$content_limit; 
-		    break;
-		default:
-			$sql = "SELECT * FROM player LIMIT $currentPageLimit,".$content_limit;
-			break;
-	}
+    $sortBy = htmlentities($_GET['sortBy']);
+    switch ($sortBy) {
+        case 'id_asc':
+            $sql = "SELECT * FROM player ORDER BY `PlayerId` ASC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'id_desc':
+            $sql = "SELECT * FROM player ORDER BY `PlayerId` DESC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'pl_asc':
+            $sql = "SELECT * FROM player ORDER BY `AccountPrivileges` ASC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'pl_desc':
+            $sql = "SELECT * FROM player ORDER BY `AccountPrivileges` DESC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'ut_asc':
+            $sql = "SELECT * FROM player ORDER BY `LastUpdateTime` ASC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'ut_desc':
+            $sql = "SELECT * FROM player ORDER BY `LastUpdateTime` DESC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'ip_asc':
+            $sql = "SELECT * FROM player ORDER BY 'IPAddress' ASC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        case 'ip_desc':
+            $sql = "SELECT * FROM player ORDER BY 'IPAddress' DESC LIMIT $currentPageLimit,".$content_limit;
+            break;
+        default:
+            $sql = "SELECT * FROM player LIMIT $currentPageLimit,".$content_limit;
+            break;
+    }
 }
 ?>
 <div class="box">
@@ -166,21 +166,21 @@ if (empty($_GET["sortBy"])) {
 					</tr>
                 <?php
                 if (!$dbc->queryDB($sql)) {
-					echo $dbc->errors()."<br />";
-				} else {
-					$databaseResponse = $dbc->queryDB($sql);
-					while($row = mysqli_fetch_array($databaseResponse)){
-						$avatarDecoded = json_decode($row["Avatar"]);
-						$playerName = $avatarDecoded->{"avatar_name"};
-						
-						echo "<tr>
-						<td>" . $row["PlayerId"] . "</td>
-						<td>" . $row["AccountPrivileges"] . "</td>
-						<td>" . $row["LastUpdateTime"] . "</td>
-						<td>" . $row["IPAddress"] . "</td>";
-					}
-				}
-				?>
+                    echo $dbc->errors().'<br />';
+                } else {
+                    $databaseResponse = $dbc->queryDB($sql);
+                    while ($row = mysqli_fetch_array($databaseResponse)) {
+                        $avatarDecoded = json_decode($row['Avatar']);
+                        $playerName = $avatarDecoded->{'avatar_name'};
+
+                        echo '<tr>
+						<td>'.$row['PlayerId'].'</td>
+						<td>'.$row['AccountPrivileges'].'</td>
+						<td>'.$row['LastUpdateTime'].'</td>
+						<td>'.$row['IPAddress'].'</td>';
+                    }
+                }
+                ?>
 			</tbody></table>
             </div>
             <!-- /.box-body -->
