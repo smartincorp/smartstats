@@ -40,7 +40,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p><?php echo $server_Name ; ?></p>
+          <p><?php echo $server_Name; ?></p>
           <!-- Status -->
           <a href="#"><?php echo $info; ?></a>
         </div>
@@ -49,7 +49,7 @@
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-		    <?php @include("navigation.php"); ?>
+		    <?php @include 'navigation.php'; ?>
        </ul>
       <!-- /.sidebar-menu -->
     </section>

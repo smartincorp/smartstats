@@ -1,11 +1,11 @@
 <?php
 
-    $info_url = file_get_contents("https://static.smartclashcoc.com/smartstats/api.php?action=CheckUpdateSmartStats");
+    $info_url = file_get_contents('https://static.smartclashcoc.com/smartstats/api.php?action=CheckUpdateSmartStats');
     $info = json_decode($info_url);
-    
+
     /* Getting information for api
     ______________________________________*/
-    
+
     $developer_name = $info->developername;
     $script_type = $info->versionType;
     $script_version = $info->version;
@@ -16,6 +16,5 @@
 
     /* Local information
     ______________________________________*/
-    
-    $version = "3.0";
-?>
+
+    $version = '3.0';
