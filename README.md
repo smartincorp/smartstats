@@ -35,4 +35,6 @@ If you have any other problem, suggestion, please make a issue for that and be a
 Alpha Man <karansanjeev @ultrapowa.com/forum>
 Copyright (C) Smart Incorporation 2016-17
 
+##Donate
 
+<a href='https://ko-fi.com/A422ACK' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=b' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> 
